@@ -20,6 +20,29 @@ public class HeroService {
 	}
 	
 	public List<Hero> findAll(){
+		if(heroRepo.findAll().size() == 0) {
+			Hero hero1 = new Hero("Dr. Nice");
+			heroRepo.save(hero1);
+			Hero hero2 = new Hero("Narco");
+			heroRepo.save(hero2);
+			Hero hero3 = new Hero("Bombasto");
+			heroRepo.save(hero3);
+			Hero hero4 = new Hero("Celeritas");
+			heroRepo.save(hero4);
+			Hero hero5 = new Hero("Magneta");
+			heroRepo.save(hero5);
+			Hero hero6 = new Hero("RubberMan");
+			heroRepo.save(hero6);
+			Hero hero7 = new Hero("Dynama");
+			heroRepo.save(hero7);
+			Hero hero8 = new Hero("Dr IQ");
+			heroRepo.save(hero8);
+			Hero hero9 = new Hero("Magma");
+			heroRepo.save(hero9);
+			Hero hero10 = new Hero("Tornado");
+			heroRepo.save(hero10);
+			
+		}
 		return heroRepo.findAll();
 	}
 	
